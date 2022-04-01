@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+    <div class="content">
+        <h1>New Form Page</h1>
+        <form>
+            <label for="submitter">
+                <H2>Name</H2>
+            </label>
+            <input name="submitter" type="text">
+            <br />
+            <label for="fact">
+                <H2>Fact</H2>
+            </label>
+            <textarea name="fact"></textarea>
+            <br />
+            <input type="submit" value="Submit the Fact">
+        </form>
+        <div class="form-link">
+            <a href="/pets">Return to PetFax</a>
+        </div>
+    </div>
+</body>
+
+</html>
